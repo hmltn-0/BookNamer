@@ -35,3 +35,10 @@ This module provides two methods to interact with the Apple Books app for handli
 ## Conclusion
 
 Both methods have their own sets of advantages and disadvantages. The choice between them depends on the specific needs of the user. Locally on a MacBook is much easier, but iCloud may be useful in some fallback cases.
+
+## Additional Notes
+
+Reverse engineering the iCloud API might be useful but is generally considered challenging and potentially unreliable. Therefore, we will focus on rewriting the metadata and accessing the files via file paths on a local machine.
+
+1. For the latest version of macOS, what is the file path to Books\' files?
+2. Due to iCloud offloading PDFs from the device to save memory, we must accommodate situations where a filename is present, but you need to trigger the file to be downloaded from iCloud before viewing it, for example, by attempting to open it.
