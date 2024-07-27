@@ -42,3 +42,9 @@ Reverse engineering the iCloud API might be useful but is generally considered c
 
 1. For the latest version of macOS, what is the file path to Books\' files?
 2. Due to iCloud offloading PDFs from the device to save memory, we must accommodate situations where a filename is present, but you need to trigger the file to be downloaded from iCloud before viewing it, for example, by attempting to open it.
+
+1. For the latest version of macOS, the file path to Books' files is usually:
+   ```
+   ~/Library/Containers/com.apple.BKAgentService/Data/Documents/iBooks/
+   ```
+2. Due to iCloud offloading PDFs from the device to save memory, we must accommodate situations where a filename is present, but you need to trigger the file to be downloaded from iCloud before viewing it, for example, by attempting to open it.
