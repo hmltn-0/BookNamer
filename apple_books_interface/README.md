@@ -9,8 +9,7 @@ This module provides two methods to interact with the Apple Books app for handli
 ### 1. iCloud
 
 **Advantages:**
-- Can be accessed from any device with internet connectivity.
-- Ensures that changes are synchronized across all devices.
+- Can be accessed from any device with internet connectivity; can hypothetically be run from any computer or even a remote server scheduled automatically, rather than on your own personal computer with your books on it.
 
 **Disadvantages:**
 - May require reverse engineering or an unofficial API to interact with iCloud, as no official API is readily available.
@@ -24,11 +23,10 @@ This module provides two methods to interact with the Apple Books app for handli
 
 **Advantages:**
 - Easier to access file paths directly for the local PDF files.
-- More control over the file handling and metadata manipulation as files are stored locally.
+- More control over file handling and metadata manipulation as files are stored locally.
 
 **Disadvantages:**
-- Changes made are only local and not synchronized across devices.
-- Requires the user to manually synchronize these changes if using multiple devices.
+- Requires you to have a functioning, up-to-date MacBook, and to run the script on it.
 
 ### File Access:
 - Direct access to the file paths of the PDF files in the local Books directory.
@@ -36,5 +34,4 @@ This module provides two methods to interact with the Apple Books app for handli
 
 ## Conclusion
 
-Both methods have their own sets of advantages and disadvantages. The choice between them depends on the specific needs of the user, whether synchronization across multiple devices is a priority, or if having direct control over file manipulation on a single device is more important.
-
+Both methods have their own sets of advantages and disadvantages. The choice between them depends on the specific needs of the user. Locally on a MacBook is much easier, but iCloud may be useful in some fallback cases.
